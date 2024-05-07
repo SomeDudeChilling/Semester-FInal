@@ -14429,7 +14429,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.20080361, y: -0, z: -0, w: 0.9796316}
-  m_LocalPosition: {x: 1.25, y: 6.1778326, z: -10.246122}
+  m_LocalPosition: {x: 1.25, y: 4.9278326, z: -8.246122}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21361,7 +21361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2891e06239934f0eb6f3fb093f66975, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.16980457
+      value: 0.08019543
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2891e06239934f0eb6f3fb093f66975, type: 3}
       propertyPath: m_LocalRotation.w
@@ -21427,7 +21427,7 @@ Animator:
   m_GameObject: {fileID: 1391102836}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 08dd22793a31d4dc5b988a072309fb74, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -35505,8 +35505,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2084389540}
   - component: {fileID: 2084389539}
+  - component: {fileID: 2084389541}
   m_Layer: 0
-  m_Name: Player Character
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35554,6 +35555,26 @@ Transform:
   - {fileID: 1391102835}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2084389541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084389538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c79662c94f042238ef59c6f1901bd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 1391102837}
+  _characterController: {fileID: 2084389539}
+  maximumSpeed: 5
+  rotationSpeed: 720
+  jumpForce: 6
+  jumpButtonGracePeriod: 0.2
+  _isGrounded: 0
+  _isJumping: 0
 --- !u!1001 &2099249209
 PrefabInstance:
   m_ObjectHideFlags: 0
